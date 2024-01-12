@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=+prompt("Nhap vao so nguyen duong bat ky");
+        var s=""
+        for(let i=1;i<=n;i++){
+            s=s+"*"
+            console.log(s);
+        }
+        s=""
+        var x=" "
+        for(let i=1;i<n;i++){
+            x=x+" "
+        }
+        for(let i=1;i<=n;i++){
+            x=x.slice(1);
+            s=s+"*";
+            console.log(x+s)
+        }
+    </script>
+</body>
+</html>

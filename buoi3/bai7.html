@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("Nhap vao so a");
+        var b=+prompt("Nhap vao so a");
+        var c=+prompt("Nhap vao so c");
+        if(a==0){
+            if(b==0&c==0){
+            console.log("Phương trình vô số nghiệm");
+        } else if(b==0&c!=0){
+            console.log("Phương trình vô nghiệm");
+        } else{
+            console.log("Phương trình có nghiệm là " + (-c/b).toFixed(2));
+        }
+        } else {
+            var delta=b*b-4*a*c;
+            var x=Math.sqrt(delta);
+            if(delta<0){
+                console.log("Phương trình vô nghiệm");
+            }else if(delta==0){
+                console.log("Phương trình có nghiệm kép là:"+ (-b/(2*a)).toFixed(2))
+            }else{
+                console.log("Phương trình có 2 nghiệm phân biệt là:"+( (-b+x)/(2*a)).toFixed(2) +" và "+( (-b-x)/(2*a)).toFixed(2));
+            }
+        }
+    </script>
+</body>
+</html>

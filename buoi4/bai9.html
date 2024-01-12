@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        var n=+prompt("Nhập vào 1 số nguyên duương bất kỳ");
+        if(n>=0&&Number.isInteger(n)){
+            let sum=0;
+            for(let i=0;i<n;i++){
+                sum+=fibo(i);
+                if(sum<n)  console.log(fibo(i)) 
+                else{ break;}
+            }
+            
+        } else{console.log("Invalid")}
+        function fibo(n){
+            if(n==0||n==1) return n;
+            var f0=0,f1=1,fn;
+            for(let i=1;i<n;i++){
+                fn=f0+f1;
+                f0=f1;
+                f1=fn;
+            }
+            return fn;
+        }
+     </script>
+</body>
+</html>

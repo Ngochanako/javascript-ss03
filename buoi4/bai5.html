@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=Math.floor(Math.random()*11);
+        do {      
+        var a=+prompt("Nhập vào 1 số nguyên:")
+        if(a>x) window.alert("Số đã nhập lớn hơn số cần tìm")
+        if(a<x) window.alert("Số đã nhập nhỏ hơn số cần tìm")
+        }while(a!=x);      
+        window.alert("Chính xác!");
+    
+    </script>
+</body>
+</html>

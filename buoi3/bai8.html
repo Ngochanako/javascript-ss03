@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("Nhap vao so thu 1");
+        var b=+prompt("Nhap vao so thu 2");
+        var cal=prompt("Nhap vao phep tinh +,-,x,/");
+        var ans=+prompt("Nhap vao ket qua");
+        switch(cal){
+            case '+':
+                if(ans==a+b){
+                    console.log(ans);
+                } else{
+                    console.log("Không hợp lệ");
+                }
+                break;
+            case '-':
+                if(ans==a-b){
+                    console.log(ans);
+                } else{
+                    console.log("Không hợp lệ");
+                }
+                break;
+            case 'x':
+                if(ans==a*b){
+                    console.log(ans);
+                } else{
+                    console.log("Không hợp lệ");
+                }
+                break;
+            case '/':
+                if(ans==a/b){
+                    console.log(ans);
+                } else{
+                    console.log("Không hợp lệ");
+                }
+                break;
+            default:
+                console.log("Invalid");
+        }
+    </script>
+</body>
+</html>

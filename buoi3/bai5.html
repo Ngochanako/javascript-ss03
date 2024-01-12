@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=+prompt("Nhập vào a:");
+        var b=+prompt("Nhập vào b:");
+        if(a==0&b==0){
+            console.log("Phương trình vô số nghiệm");
+        } else if(a==0&b!=0){
+            console.log("Phương trình vô nghiệm");
+        } else{
+            console.log("Phương trình có nghiệm là " + (-b/a).toFixed(2));
+        }
+    </script>
+</body>
+</html>

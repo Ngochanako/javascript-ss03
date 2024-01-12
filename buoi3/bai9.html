@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+                var year = + prompt("Nhap vao nam la so nguyen lon hon 0");
+            } while (year < 1 || !Number.isInteger(year));
+        do {
+                var x = +prompt("Nhap so thang trong nam la so nguyen hop le:");
+            } while (x < 1 || x > 31 || !Number.isInteger(x));
+        if (x == 4 || x == 6 || x == 9 || x == 11) {
+                console.log("So ngay cua thang la 30");
+        } else if (x == 2) {
+            if (year % 4 == 0 && year % 100 != 0) {
+                    console.log("Số ngày của tháng là 29");
+            } else {
+                    console.log("Tháng có 28 ngày");
+            }
+        } else {
+                console.log("Tháng có 31 ngày");
+        }
+    </script>
+</body>
+</html>
